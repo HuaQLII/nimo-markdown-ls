@@ -1,3 +1,43 @@
+<!-- <div id="contact-info">
+
+    {% if page.homepage %}
+    <i class="" style="margin-left:1em"></i>
+    <i style="margin-left:0.5em;"> {{ page.homepage.text }}</i>
+    {% endif %}
+
+    {% if page.phone %}
+    <i class="" style="margin-left:1em"></i>
+    <i style="margin-left:0.5em;">{{ page.phone.text }}</i>
+    {% endif %}
+
+    {% if page.email %}
+    <i class="" style="margin-left:1em"></i>
+    <i style="margin-left:0.5em;">{{ page.email.text }}</i>
+    {% endif %}
+<br>
+    {% if page.school %}
+    <i class="" style="margin-left:0em"></i>
+    <i style="margin-left:0.5em;">{{ page.school.text }}</i>
+    {% endif %}
+
+    {% if page.age %}
+    <i class="" style="margin-left:1em"></i>
+    <i style="margin-left:0.5em;">{{ page.age.text }}</i>
+    {% endif %}
+
+    {% if page.idea %}
+    <i class="" style="margin-left:1em"></i>
+    <i style="margin-left:5.5em;">{{ page.idea.text }}</i>
+    {% endif %} -->
+  <!-- {% if page.age %}
+    <i class="fi-people" style="margin-left:1em"></i>
+    {{ page.age }}
+    {% endif %}  --> 
+
+
+
+
+
 <div id="contact-info">
 
     {% if page.homepage %}
@@ -12,7 +52,7 @@
 
     {% if page.phone %}
     <i class="fi-telephone" style="margin-left:1em"></i>
-    {{ page.phone }}
+    <a href="{{page.phone.url }}" style="margin-left:0.5em">{{ page.phone.text }}</a>
     {% endif %}
 
 </div>
